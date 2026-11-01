@@ -1,0 +1,9 @@
+{
+ "frozen_at": "2026-10-31T16:12+07:00",
+ "reason": "lock the retrieval tuning before any gold / held-out scenario is written or run",
+ "sha256": {
+  "src/traffic_law/retrieval/legal_terms.py": "baaa5e727e9f91fd32dc7609417dba772329a0cbe66ee18dc7cf69c3dd482399",
+  "src/traffic_law/retrieval/offenses.py": "244d830ec36617c165d03236d3b1bfb07ae4fe4a359979f33e03334b8bf6bdcd",
+  "data/penalties.csv": "0af3ad1e29ba32d340a5061081b501b0afbef8f882358b47a6171f14380d8077"
+ }
+}

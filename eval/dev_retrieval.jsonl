@@ -1,0 +1,18 @@
+{"id": "d01", "scenario": "ขับรถคุยมือถือไปด้วย ถือโทรศัพท์แนบหู", "expected": ["phone"], "status": "violations_found", "tags": ["single"]}
+{"id": "d02", "scenario": "ขี่มอไซค์ไม่ได้ใส่หมวกกันน็อค", "expected": ["no_helmet"], "status": "violations_found", "tags": ["single", "motorcycle"]}
+{"id": "d03", "scenario": "เมื่อคืนกินเหล้าไปหลายแก้วแล้วขับรถกลับบ้าน", "expected": ["drunk"], "status": "violations_found", "tags": ["single"]}
+{"id": "d04", "scenario": "ฝ่าไฟแดงตรงสี่แยก", "expected": ["red_light"], "status": "violations_found", "tags": ["single", "short"]}
+{"id": "d05", "scenario": "ขับย้อนศรเพราะขี้เกียจไปกลับรถไกล", "expected": ["wrong_way"], "status": "violations_found", "tags": ["single"]}
+{"id": "d06", "scenario": "ขี่มอไซค์ขึ้นฟุตบาทหนีรถติด", "expected": ["sidewalk"], "status": "violations_found", "tags": ["single", "motorcycle"]}
+{"id": "d07", "scenario": "เห็นคนจะข้ามทางม้าลายแต่ไม่ได้หยุดรถ", "expected": ["crosswalk_no_stop"], "status": "violations_found", "tags": ["single"]}
+{"id": "d08", "scenario": "ขับรถชนรถคันหน้าแล้วขับหนีไปเลย", "expected": ["hit_and_run"], "status": "violations_found", "tags": ["single"]}
+{"id": "d09", "scenario": "ไม่คาดเข็มขัดนิรภัยตอนขับรถ", "expected": ["no_seatbelt"], "status": "violations_found", "tags": ["single"]}
+{"id": "d10", "scenario": "รถพยาบาลเปิดหวอมาข้างหลังแต่ไม่หลบให้", "expected": ["emergency_no_yield"], "status": "violations_found", "tags": ["single"]}
+{"id": "d11", "scenario": "ขับ 140 บนถนนที่ป้ายบอก 90", "expected": ["speeding"], "status": "violations_found", "tags": ["single", "numbers"]}
+{"id": "d12", "scenario": "เด็กแว้นรวมกลุ่มแข่งรถกันบนถนนตอนดึก", "expected": ["street_racing"], "status": "violations_found", "tags": ["single"]}
+{"id": "d13", "scenario": "ง่วงมากแทบหลับในแต่ยังฝืนขับต่อ", "expected": ["impaired"], "status": "violations_found", "tags": ["single"]}
+{"id": "d14", "scenario": "ได้ใบสั่งมาแล้วไม่ไปจ่ายค่าปรับ", "expected": ["unpaid_ticket"], "status": "violations_found", "tags": ["single"]}
+{"id": "d15", "scenario": "ขี่มอไซค์ซ้อนท้ายแฟน คนซ้อนไม่ใส่หมวก แล้วฝ่าไฟแดง", "expected": ["no_helmet_passenger", "red_light"], "status": "violations_found", "tags": ["multi", "motorcycle"]}
+{"id": "d16", "scenario": "เมาแล้วขับรถเร็ว ไม่คาดเข็มขัด", "expected": ["drunk", "speeding", "no_seatbelt"], "status": "violations_found", "tags": ["multi"]}
+{"id": "d17", "scenario": "ขับรถไม่มีป้ายทะเบียน", "expected": ["no_plate"], "status": "violations_found", "tags": ["single", "short"]}
+{"id": "d18", "scenario": "เสพยาบ้าแล้วขับรถบรรทุก", "expected": ["drugs"], "status": "violations_found", "tags": ["single"]}
