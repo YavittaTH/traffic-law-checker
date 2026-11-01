@@ -1,0 +1,1392 @@
+{
+ "rag": [
+  {
+   "id": "s01",
+   "scenario": "เมื่อคืนปาร์ตี้วันเกิดเพื่อน หมดไปหลายขวด ตีสองก็ขับกลับเอง",
+   "expected": [
+    "drunk"
+   ],
+   "status": "violations_found",
+   "tags": [
+    "single",
+    "no_keyword"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "ไม่มีคำว่าเมา/เหล้า",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "violations_found",
+   "pred_offenses": [
+    "impaired"
+   ],
+   "exact": false,
+   "summary_th": "ผู้ขับขี่ขับรถหลังจากดื่มเครื่องดื่มแอลกอฮอล์มาหลายขวดในเวลากลางดึก ซึ่งเข้าข่ายการขับรถขณะหย่อนความสามารถในอันที่จะขับ",
+   "follow_up": null,
+   "sources": [
+    "impaired",
+    "no_seatbelt"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 5.5,
+   "penalty": {
+    "offense_ids": [
+     "impaired"
+    ],
+    "total_fine_max": 10000,
+    "fine_unknown": [],
+    "points_raw": 3,
+    "total_points": 3,
+    "points_capped": false,
+    "points_left": 9,
+    "license_suspension_risk": false,
+    "any_jail": true,
+    "unverified": []
+   },
+   "gold_in_sources": []
+  },
+  {
+   "id": "s02",
+   "scenario": "ขับรถคุยโทรสับไปด้วย ถือไว้ข้างหู",
+   "expected": [
+    "phone"
+   ],
+   "status": "violations_found",
+   "tags": [
+    "single",
+    "typo"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "สะกดผิด โทรสับ",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "violations_found",
+   "pred_offenses": [
+    "phone"
+   ],
+   "exact": true,
+   "summary_th": "ผู้ขับขี่กระทำความผิดฐานขับรถขณะใช้โทรศัพท์เคลื่อนที่โดยถือไว้ข้างหู",
+   "follow_up": null,
+   "sources": [
+    "phone",
+    "abnormal_driving",
+    "suspended_license",
+    "drunk",
+    "speeding",
+    "impaired",
+    "reckless",
+    "wrong_way"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 1.8,
+   "penalty": {
+    "offense_ids": [
+     "phone"
+    ],
+    "total_fine_max": 4000,
+    "fine_unknown": [],
+    "points_raw": 1,
+    "total_points": 1,
+    "points_capped": false,
+    "points_left": 11,
+    "license_suspension_risk": false,
+    "any_jail": false,
+    "unverified": []
+   },
+   "gold_in_sources": [
+    "phone"
+   ]
+  },
+  {
+   "id": "s03",
+   "scenario": "ไฟเขียวกระพริบ เหลือง แล้วก็แดง แต่ผมเร่งตามคันหน้าไปติดๆ",
+   "expected": [
+    "red_light"
+   ],
+   "status": "violations_found",
+   "tags": [
+    "single",
+    "no_keyword"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "ไม่มีคำว่าฝ่าไฟแดงตรง ๆ",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "no_violation",
+   "pred_offenses": [],
+   "exact": false,
+   "summary_th": "จากเรื่องที่เล่ามา ไม่พบการกระทำความผิดตามแหล่งข้อมูลที่ให้มา",
+   "follow_up": null,
+   "sources": [
+    "no_seatbelt"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 2.9,
+   "penalty": null,
+   "gold_in_sources": []
+  },
+  {
+   "id": "s04",
+   "scenario": "ขี่รถเครื่องไปตลาดใกล้ๆ ขี้เกียจใส่หมวก",
+   "expected": [
+    "no_helmet"
+   ],
+   "status": "violations_found",
+   "tags": [
+    "single",
+    "slang"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "รถเครื่อง = มอเตอร์ไซค์",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "violations_found",
+   "pred_offenses": [
+    "no_helmet"
+   ],
+   "exact": true,
+   "summary_th": "ผู้ขับขี่ขี่รถจักรยานยนต์ไปตลาดโดยไม่สวมหมวกนิรภัย",
+   "follow_up": null,
+   "sources": [
+    "no_helmet",
+    "no_helmet_passenger",
+    "hit_and_run"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 4.1,
+   "penalty": {
+    "offense_ids": [
+     "no_helmet"
+    ],
+    "total_fine_max": 2000,
+    "fine_unknown": [],
+    "points_raw": 1,
+    "total_points": 1,
+    "points_capped": false,
+    "points_left": 11,
+    "license_suspension_risk": false,
+    "any_jail": false,
+    "unverified": []
+   },
+   "gold_in_sources": [
+    "no_helmet"
+   ]
+  },
+  {
+   "id": "s05",
+   "scenario": "รถติดมาก เลยขี่ขึ้นไปบนทางที่คนเดินแป๊บเดียว",
+   "expected": [
+    "sidewalk"
+   ],
+   "status": "violations_found",
+   "tags": [
+    "single",
+    "no_keyword"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "ไม่มีคำว่าทางเท้า/ฟุตบาท",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "out_of_scope",
+   "pred_offenses": [],
+   "exact": false,
+   "summary_th": "การขี่รถขึ้นไปบนทางที่คนเดินนั้น ไม่ตรงกับข้อหาความผิดตามแหล่งข้อมูลที่ให้มา",
+   "follow_up": null,
+   "sources": [
+    "crosswalk_no_stop",
+    "hit_and_run",
+    "wrong_way",
+    "emergency_no_yield",
+    "street_racing"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 2.6,
+   "penalty": null,
+   "gold_in_sources": []
+  },
+  {
+   "id": "s06",
+   "scenario": "ขับมาเกือบร้อยหกสิบ ถนนเส้นนั้นเขาให้ร้อยยี่สิบ",
+   "expected": [
+    "speeding"
+   ],
+   "status": "violations_found",
+   "tags": [
+    "single",
+    "number_words"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "ตัวเลขเป็นคำ ไม่มีคำว่าเร็ว",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "no_violation",
+   "pred_offenses": [],
+   "exact": false,
+   "summary_th": "จากเรื่องที่เล่ามา ไม่พบการกระทำความผิดตามแหล่งข้อมูลที่ให้มา",
+   "follow_up": null,
+   "sources": [
+    "impaired",
+    "no_seatbelt",
+    "crosswalk_no_stop"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 1.2,
+   "penalty": null,
+   "gold_in_sources": []
+  },
+  {
+   "id": "s07",
+   "scenario": "มีคนยืนรอข้ามตรงแถบขาวดำ แต่ผมไม่ชะลอ ขับผ่านไปเลย",
+   "expected": [
+    "crosswalk_no_stop"
+   ],
+   "status": "violations_found",
+   "tags": [
+    "single",
+    "no_keyword"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "แถบขาวดำ = ทางม้าลาย",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "violations_found",
+   "pred_offenses": [
+    "crosswalk_no_stop"
+   ],
+   "exact": true,
+   "summary_th": "ผู้ขับขี่ขับรถผ่านคนเดินเท้าที่รอข้ามทาง ณ ทางข้ามโดยไม่ชะลอรถ",
+   "follow_up": null,
+   "sources": [
+    "crosswalk_no_stop",
+    "impaired",
+    "no_seatbelt"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 3.5,
+   "penalty": {
+    "offense_ids": [
+     "crosswalk_no_stop"
+    ],
+    "total_fine_max": 4000,
+    "fine_unknown": [],
+    "points_raw": 1,
+    "total_points": 1,
+    "points_capped": false,
+    "points_left": 11,
+    "license_suspension_risk": false,
+    "any_jail": false,
+    "unverified": []
+   },
+   "gold_in_sources": [
+    "crosswalk_no_stop"
+   ]
+  },
+  {
+   "id": "s08",
+   "scenario": "เฉี่ยวกระจกข้างรถคันอื่นแล้วตกใจ เลยรีบไปต่อไม่ได้จอด",
+   "expected": [
+    "hit_and_run"
+   ],
+   "status": "violations_found",
+   "tags": [
+    "single",
+    "no_keyword"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "ไม่มีคำว่าชนแล้วหนี",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "violations_found",
+   "pred_offenses": [
+    "hit_and_run"
+   ],
+   "exact": true,
+   "summary_th": "ผู้ขับขี่เฉี่ยวชนรถคันอื่นแล้วไม่ได้หยุดรถเพื่อช่วยเหลือหรือแจ้งตำรวจ",
+   "follow_up": null,
+   "sources": [
+    "emergency_no_yield",
+    "no_plate",
+    "wrong_way",
+    "hit_and_run",
+    "plate_altered",
+    "unpaid_ticket",
+    "plate_incomplete",
+    "crosswalk_no_stop"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 2.0,
+   "penalty": {
+    "offense_ids": [
+     "hit_and_run"
+    ],
+    "total_fine_max": 10000,
+    "fine_unknown": [],
+    "points_raw": 3,
+    "total_points": 3,
+    "points_capped": false,
+    "points_left": 9,
+    "license_suspension_risk": false,
+    "any_jail": true,
+    "unverified": []
+   },
+   "gold_in_sources": [
+    "hit_and_run"
+   ]
+  },
+  {
+   "id": "s09",
+   "scenario": "นั่งหลังพวงมาลัยทั้งที่ไม่ได้รัดอะไรเลย",
+   "expected": [
+    "no_seatbelt"
+   ],
+   "status": "violations_found",
+   "tags": [
+    "single",
+    "no_keyword"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "ไม่มีคำว่าเข็มขัด",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "violations_found",
+   "pred_offenses": [
+    "no_seatbelt"
+   ],
+   "exact": true,
+   "summary_th": "ผู้ขับขี่ไม่ได้คาดเข็มขัดนิรภัยขณะขับรถยนต์",
+   "follow_up": null,
+   "sources": [
+    "no_seatbelt"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 1.5,
+   "penalty": {
+    "offense_ids": [
+     "no_seatbelt"
+    ],
+    "total_fine_max": 2000,
+    "fine_unknown": [],
+    "points_raw": 1,
+    "total_points": 1,
+    "points_capped": false,
+    "points_left": 11,
+    "license_suspension_risk": false,
+    "any_jail": false,
+    "unverified": []
+   },
+   "gold_in_sources": [
+    "no_seatbelt"
+   ]
+  },
+  {
+   "id": "s10",
+   "scenario": "ทะเบียนหลุดหายไปตั้งแต่อาทิตย์ก่อน ยังขับใช้ปกติ",
+   "expected": [
+    "no_plate"
+   ],
+   "status": "violations_found",
+   "tags": [
+    "single",
+    "no_keyword"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "violations_found",
+   "pred_offenses": [
+    "no_plate"
+   ],
+   "exact": true,
+   "summary_th": "ผู้ขับขี่นำรถที่ทะเบียนหลุดหายไปมาใช้ในทางเดินรถโดยไม่ติดแผ่นป้ายทะเบียน",
+   "follow_up": null,
+   "sources": [
+    "impaired",
+    "plate_incomplete",
+    "no_seatbelt",
+    "no_plate"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 1.5,
+   "penalty": {
+    "offense_ids": [
+     "no_plate"
+    ],
+    "total_fine_max": 4000,
+    "fine_unknown": [],
+    "points_raw": 1,
+    "total_points": 1,
+    "points_capped": false,
+    "points_left": 11,
+    "license_suspension_risk": false,
+    "any_jail": false,
+    "unverified": []
+   },
+   "gold_in_sources": [
+    "no_plate"
+   ]
+  },
+  {
+   "id": "s11",
+   "scenario": "ลูกสามขวบนั่งตักแม่ที่เบาะหน้า ไม่มีคาร์ซีท ผมขับเองก็ไม่ได้คาด",
+   "expected": [
+    "no_seatbelt"
+   ],
+   "status": "violations_found",
+   "tags": [
+    "single",
+    "multi_fact"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "หลายข้อเท็จจริงแต่เป็นข้อหาเดียว ต้องไม่นับซ้ำ",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "violations_found",
+   "pred_offenses": [
+    "no_seatbelt"
+   ],
+   "exact": true,
+   "summary_th": "ผู้ขับขี่ไม่ได้จัดให้เด็กที่นั่งบนตักคาดที่นั่งนิรภัยสำหรับเด็ก",
+   "follow_up": null,
+   "sources": [
+    "no_seatbelt",
+    "impaired",
+    "speeding",
+    "no_helmet_passenger",
+    "no_helmet",
+    "phone",
+    "sidewalk",
+    "emergency_no_yield"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 1.9,
+   "penalty": {
+    "offense_ids": [
+     "no_seatbelt"
+    ],
+    "total_fine_max": 2000,
+    "fine_unknown": [],
+    "points_raw": 1,
+    "total_points": 1,
+    "points_capped": false,
+    "points_left": 11,
+    "license_suspension_risk": false,
+    "any_jail": false,
+    "unverified": []
+   },
+   "gold_in_sources": [
+    "no_seatbelt"
+   ]
+  },
+  {
+   "id": "s12",
+   "scenario": "ขี่มอไซค์ซ้อนแฟนไปกินข้าว ทั้งคู่ไม่มีหมวก",
+   "expected": [
+    "no_helmet",
+    "no_helmet_passenger"
+   ],
+   "status": "violations_found",
+   "tags": [
+    "multi"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "คนขี่ + คนซ้อน แยกสองข้อหา",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "violations_found",
+   "pred_offenses": [
+    "no_helmet",
+    "no_helmet_passenger"
+   ],
+   "exact": true,
+   "summary_th": "ผู้ขับขี่และผู้โดยสารไม่ได้สวมหมวกนิรภัยขณะขับขี่รถจักรยานยนต์",
+   "follow_up": null,
+   "sources": [
+    "no_helmet",
+    "no_helmet_passenger",
+    "hit_and_run"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 2.1,
+   "penalty": {
+    "offense_ids": [
+     "no_helmet",
+     "no_helmet_passenger"
+    ],
+    "total_fine_max": 6000,
+    "fine_unknown": [],
+    "points_raw": 1,
+    "total_points": 1,
+    "points_capped": false,
+    "points_left": 11,
+    "license_suspension_risk": false,
+    "any_jail": false,
+    "unverified": []
+   },
+   "gold_in_sources": [
+    "no_helmet",
+    "no_helmet_passenger"
+   ]
+  },
+  {
+   "id": "s13",
+   "scenario": "กินเบียร์มาสามกระป๋อง ขับกลับไวๆ ประมาณ 140 ในเมือง",
+   "expected": [
+    "drunk",
+    "speeding"
+   ],
+   "status": "violations_found",
+   "tags": [
+    "multi"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "violations_found",
+   "pred_offenses": [
+    "drunk",
+    "impaired",
+    "speeding"
+   ],
+   "exact": false,
+   "summary_th": "ผู้ขับขี่ดื่มเบียร์มา 3 กระป๋องแล้วขับรถด้วยความเร็ว 140 กม./ชม. ในเขตเมือง ซึ่งเข้าข่ายเมาสุรา หย่อนความสามารถในการขับขี่ และขับรถเร็วเกินกว่าที่กฎหมายกำหนด",
+   "follow_up": null,
+   "sources": [
+    "drunk",
+    "impaired",
+    "no_seatbelt",
+    "unpaid_ticket",
+    "abnormal_driving",
+    "suspended_license",
+    "speeding",
+    "phone"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 3.7,
+   "penalty": {
+    "offense_ids": [
+     "drunk",
+     "impaired",
+     "speeding"
+    ],
+    "total_fine_max": 34000,
+    "fine_unknown": [],
+    "points_raw": 8,
+    "total_points": 8,
+    "points_capped": false,
+    "points_left": 4,
+    "license_suspension_risk": false,
+    "any_jail": true,
+    "unverified": []
+   },
+   "gold_in_sources": [
+    "drunk",
+    "speeding"
+   ]
+  },
+  {
+   "id": "s14",
+   "scenario": "เลี้ยวเข้าซอยวันเวย์แบบทวนทาง แล้วคุยไลน์ไปด้วย",
+   "expected": [
+    "wrong_way",
+    "phone"
+   ],
+   "status": "violations_found",
+   "tags": [
+    "multi"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "violations_found",
+   "pred_offenses": [
+    "phone",
+    "wrong_way"
+   ],
+   "exact": true,
+   "summary_th": "ผู้ขับขี่กระทำความผิด 2 ส่วน คือ ขับรถย้อนศรเมื่อเลี้ยวเข้าซอยวันเวย์ และขับรถขณะใช้โทรศัพท์มือถือโดยไม่ใช้อุปกรณ์เสริม",
+   "follow_up": null,
+   "sources": [
+    "wrong_way",
+    "no_plate",
+    "phone",
+    "crosswalk_no_stop",
+    "abnormal_driving",
+    "speeding",
+    "street_racing",
+    "hit_and_run"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 3.1,
+   "penalty": {
+    "offense_ids": [
+     "wrong_way",
+     "phone"
+    ],
+    "total_fine_max": 6000,
+    "fine_unknown": [],
+    "points_raw": 3,
+    "total_points": 3,
+    "points_capped": false,
+    "points_left": 9,
+    "license_suspension_risk": false,
+    "any_jail": false,
+    "unverified": []
+   },
+   "gold_in_sources": [
+    "phone",
+    "wrong_way"
+   ]
+  },
+  {
+   "id": "s15",
+   "scenario": "โดนตำรวจเรียกตรวจ เป่าแล้วเกิน แถมไม่ได้คาดเข็มขัด",
+   "expected": [
+    "drunk",
+    "no_seatbelt"
+   ],
+   "status": "violations_found",
+   "tags": [
+    "multi",
+    "no_keyword"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "เป่าแล้วเกิน = เมา",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "violations_found",
+   "pred_offenses": [
+    "no_seatbelt"
+   ],
+   "exact": false,
+   "summary_th": "ผู้ขับขี่ถูกตรวจพบว่าขับรถโดยไม่คาดเข็มขัดนิรภัย และมีผลการเป่าเครื่องดื่มแอลกอฮอล์เกินกำหนด",
+   "follow_up": null,
+   "sources": [
+    "no_seatbelt",
+    "speeding",
+    "no_regard_safety",
+    "hit_and_run",
+    "unpaid_ticket",
+    "drugs"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 4.1,
+   "penalty": {
+    "offense_ids": [
+     "no_seatbelt"
+    ],
+    "total_fine_max": 2000,
+    "fine_unknown": [],
+    "points_raw": 1,
+    "total_points": 1,
+    "points_capped": false,
+    "points_left": 11,
+    "license_suspension_risk": false,
+    "any_jail": false,
+    "unverified": []
+   },
+   "gold_in_sources": [
+    "no_seatbelt"
+   ]
+  },
+  {
+   "id": "s16",
+   "scenario": "ทำงานสองกะติดกันจนหลับใน ไปชนเสาไฟข้างทาง แล้วก็ขับต่อไปเลยไม่ได้แจ้งใคร",
+   "expected": [
+    "impaired",
+    "hit_and_run"
+   ],
+   "status": "violations_found",
+   "tags": [
+    "multi"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "ชนทรัพย์สินผู้อื่นแล้วไม่แจ้ง",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "violations_found",
+   "pred_offenses": [
+    "hit_and_run",
+    "impaired"
+   ],
+   "exact": true,
+   "summary_th": "ผู้ขับขี่ขับรถขณะหลับใน (หย่อนความสามารถในการขับขี่) และเมื่อเกิดอุบัติเหตุชนเสาไฟแล้วได้ขับรถต่อไปโดยไม่หยุดรถ ไม่ให้ความช่วยเหลือ และไม่แจ้งตำรวจ",
+   "follow_up": null,
+   "sources": [
+    "impaired",
+    "no_seatbelt",
+    "red_light",
+    "hit_and_run",
+    "abnormal_driving",
+    "suspended_license",
+    "drunk",
+    "speeding"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 13.5,
+   "penalty": {
+    "offense_ids": [
+     "impaired",
+     "hit_and_run"
+    ],
+    "total_fine_max": 20000,
+    "fine_unknown": [],
+    "points_raw": 6,
+    "total_points": 6,
+    "points_capped": false,
+    "points_left": 6,
+    "license_suspension_risk": false,
+    "any_jail": true,
+    "unverified": []
+   },
+   "gold_in_sources": [
+    "hit_and_run",
+    "impaired"
+   ]
+  },
+  {
+   "id": "s17",
+   "scenario": "รถพยาบาลเปิดไฟมาข้างหลังแต่ไม่หลบ แถมฝ่าแดงหนีไปอีก",
+   "expected": [
+    "emergency_no_yield",
+    "red_light"
+   ],
+   "status": "violations_found",
+   "tags": [
+    "multi"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "violations_found",
+   "pred_offenses": [
+    "emergency_no_yield",
+    "red_light"
+   ],
+   "exact": true,
+   "summary_th": "ผู้ขับขี่ไม่หยุดหรือหลบให้รถพยาบาล (รถฉุกเฉิน) ผ่านไปก่อน และยังฝ่าสัญญาณไฟแดงด้วย",
+   "follow_up": null,
+   "sources": [
+    "hit_and_run",
+    "emergency_no_yield",
+    "reckless",
+    "red_light",
+    "crosswalk_no_stop",
+    "unpaid_ticket",
+    "drugs",
+    "no_plate"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 2.0,
+   "penalty": {
+    "offense_ids": [
+     "emergency_no_yield",
+     "red_light"
+    ],
+    "total_fine_max": 6000,
+    "fine_unknown": [],
+    "points_raw": 3,
+    "total_points": 3,
+    "points_capped": false,
+    "points_left": 9,
+    "license_suspension_risk": false,
+    "any_jail": false,
+    "unverified": []
+   },
+   "gold_in_sources": [
+    "emergency_no_yield",
+    "red_light"
+   ]
+  },
+  {
+   "id": "s18",
+   "scenario": "ขี่มอไซค์ไม่ใส่หมวกขึ้นฟุตปาธ ขับปาดซ้ายปาดขวา",
+   "expected": [
+    "no_helmet",
+    "sidewalk",
+    "reckless"
+   ],
+   "status": "violations_found",
+   "tags": [
+    "multi"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "สามข้อหา",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "violations_found",
+   "pred_offenses": [
+    "no_helmet",
+    "reckless",
+    "sidewalk"
+   ],
+   "exact": true,
+   "summary_th": "ผู้ขับขี่กระทำความผิดหลายข้อหา คือ ขี่รถจักรยานยนต์ไม่สวมหมวกนิรภัย ขับรถบนทางเท้าโดยไม่มีเหตุอันสมควร และขับรถโดยประมาทหรือน่าหวาดเสียวจากการขับปาดซ้ายปาดขวา",
+   "follow_up": null,
+   "sources": [
+    "no_helmet",
+    "no_helmet_passenger",
+    "reckless",
+    "sidewalk",
+    "impaired",
+    "hit_and_run",
+    "wrong_way",
+    "emergency_no_yield"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 2.8,
+   "penalty": {
+    "offense_ids": [
+     "no_helmet",
+     "sidewalk",
+     "reckless"
+    ],
+    "total_fine_max": 10000,
+    "fine_unknown": [],
+    "points_raw": 3,
+    "total_points": 3,
+    "points_capped": false,
+    "points_left": 9,
+    "license_suspension_risk": false,
+    "any_jail": false,
+    "unverified": []
+   },
+   "gold_in_sources": [
+    "no_helmet",
+    "reckless",
+    "sidewalk"
+   ]
+  },
+  {
+   "id": "s19",
+   "scenario": "เสพยามาแล้วรวมแก๊งแข่งรถบนถนนเลียบทางด่วนตอนตีสาม",
+   "expected": [
+    "drugs",
+    "street_racing"
+   ],
+   "status": "violations_found",
+   "tags": [
+    "multi"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "violations_found",
+   "pred_offenses": [
+    "drugs",
+    "street_racing"
+   ],
+   "exact": true,
+   "summary_th": "ผู้ขับขี่เสพยาเสพติดและร่วมแข่งรถบนถนนโดยไม่ได้รับอนุญาต",
+   "follow_up": null,
+   "sources": [
+    "drugs",
+    "street_racing",
+    "no_seatbelt",
+    "wrong_way",
+    "abnormal_driving",
+    "speeding",
+    "crosswalk_no_stop",
+    "hit_and_run"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 3.2,
+   "penalty": {
+    "offense_ids": [
+     "drugs",
+     "street_racing"
+    ],
+    "total_fine_max": 10000,
+    "fine_unknown": [
+     "drugs"
+    ],
+    "points_raw": 8,
+    "total_points": 8,
+    "points_capped": false,
+    "points_left": 4,
+    "license_suspension_risk": false,
+    "any_jail": true,
+    "unverified": []
+   },
+   "gold_in_sources": [
+    "drugs",
+    "street_racing"
+   ]
+  },
+  {
+   "id": "s20",
+   "scenario": "ขับรถส่ายไปมาเบียดคันอื่น เพราะมัวแต่ก้มดูมือถือ",
+   "expected": [
+    "reckless",
+    "phone"
+   ],
+   "status": "violations_found",
+   "tags": [
+    "multi"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "violations_found",
+   "pred_offenses": [
+    "reckless"
+   ],
+   "exact": false,
+   "summary_th": "ผู้ขับขี่ขับรถโดยประมาทเพราะมัวแต่ก้มดูโทรศัพท์มือถือจนทำให้รถส่ายและเบียดคันอื่น",
+   "follow_up": null,
+   "sources": [
+    "reckless",
+    "phone",
+    "abnormal_driving",
+    "suspended_license",
+    "drunk",
+    "speeding",
+    "impaired",
+    "wrong_way"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 2.0,
+   "penalty": {
+    "offense_ids": [
+     "reckless"
+    ],
+    "total_fine_max": 4000,
+    "fine_unknown": [],
+    "points_raw": 1,
+    "total_points": 1,
+    "points_capped": false,
+    "points_left": 11,
+    "license_suspension_risk": false,
+    "any_jail": false,
+    "unverified": []
+   },
+   "gold_in_sources": [
+    "phone",
+    "reckless"
+   ]
+  },
+  {
+   "id": "s21",
+   "scenario": "ใส่หมวกครบทั้งคนขี่คนซ้อน ขับชิดซ้าย ความเร็วไม่เกินที่ป้ายบอก",
+   "expected": [],
+   "status": "no_violation",
+   "tags": [
+    "negation"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "มีคำหลักแต่ปฏิบัติถูก",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "no_violation",
+   "pred_offenses": [],
+   "exact": true,
+   "summary_th": "ผู้ขับขี่ปฏิบัติตามกฎจราจรที่ระบุไว้ทั้งหมด คือ สวมหมวกนิรภัยครบทั้งคนขี่และคนซ้อน ขับขี่ไม่เร็วเกินกำหนด และไม่ได้กระทำการใดๆ ที่เข้าข่ายการฝ่าฝืนตามแหล่งข้อมูลที่ให้มา",
+   "follow_up": null,
+   "sources": [
+    "speeding",
+    "no_helmet_passenger",
+    "no_helmet",
+    "emergency_no_yield",
+    "plate_incomplete",
+    "crosswalk_no_stop",
+    "no_seatbelt",
+    "impaired"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 2.7,
+   "penalty": null,
+   "gold_in_sources": []
+  },
+  {
+   "id": "s22",
+   "scenario": "คุยโทรศัพท์ผ่านหูฟังบลูทูธ มือจับพวงมาลัยตลอด ไม่ได้ถือเครื่อง",
+   "expected": [],
+   "status": "no_violation",
+   "tags": [
+    "negation"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "ข้อยกเว้นของ 43(9)",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "no_violation",
+   "pred_offenses": [],
+   "exact": true,
+   "summary_th": "ผู้ขับขี่ใช้โทรศัพท์ผ่านหูฟังบลูทูธและจับพวงมาลัยตลอด จึงไม่มีการกระทำความผิดตามที่ระบุในแหล่งข้อมูล",
+   "follow_up": null,
+   "sources": [
+    "phone",
+    "no_plate",
+    "abnormal_driving",
+    "suspended_license",
+    "drunk",
+    "speeding",
+    "impaired",
+    "reckless"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 1.6,
+   "penalty": null,
+   "gold_in_sources": []
+  },
+  {
+   "id": "s23",
+   "scenario": "หยุดให้คนข้ามทางม้าลายจนข้ามเสร็จแล้วค่อยไปต่อ",
+   "expected": [],
+   "status": "no_violation",
+   "tags": [
+    "negation"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "no_violation",
+   "pred_offenses": [],
+   "exact": true,
+   "summary_th": "ผู้ขับขี่หยุดให้คนข้ามทางม้าลายจนข้ามเสร็จแล้วจึงไปต่อ ซึ่งเป็นการปฏิบัติตามกฎจราจร",
+   "follow_up": null,
+   "sources": [
+    "crosswalk_no_stop",
+    "red_light",
+    "emergency_no_yield",
+    "hit_and_run",
+    "wrong_way",
+    "street_racing"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 2.7,
+   "penalty": null,
+   "gold_in_sources": []
+  },
+  {
+   "id": "s24",
+   "scenario": "ดื่มน้ำอัดลมกับเพื่อนแล้วขับกลับ ไม่ได้แตะแอลกอฮอล์เลย",
+   "expected": [],
+   "status": "no_violation",
+   "tags": [
+    "negation"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "มีคำว่าแอลกอฮอล์แต่ไม่ได้ดื่ม",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "no_violation",
+   "pred_offenses": [],
+   "exact": true,
+   "summary_th": "ผู้ขับขี่แจ้งว่าไม่ได้ดื่มแอลกอฮอล์เลย จึงไม่เข้าข่ายความผิดตามที่ระบุในแหล่งข้อมูล",
+   "follow_up": null,
+   "sources": [
+    "drunk",
+    "impaired",
+    "no_seatbelt",
+    "abnormal_driving",
+    "suspended_license",
+    "speeding",
+    "phone",
+    "reckless"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 1.6,
+   "penalty": null,
+   "gold_in_sources": []
+  },
+  {
+   "id": "s25",
+   "scenario": "ขับรถอยู่ดีๆ โดนตำรวจโบกให้จอด ผิดอะไรเหรอ",
+   "expected": [],
+   "status": "need_more_info",
+   "tags": [
+    "need_info"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "no_violation",
+   "pred_offenses": [],
+   "exact": false,
+   "summary_th": "จากเรื่องที่เล่ามา ผู้ขับขี่ถูกตำรวจโบกให้จอด แต่ไม่ได้ระบุว่าทำผิดกฎจราจรข้อใด จึงไม่สามารถระบุการกระทำผิดตามแหล่งข้อมูลที่มีได้",
+   "follow_up": null,
+   "sources": [
+    "emergency_no_yield",
+    "hit_and_run",
+    "no_plate",
+    "wrong_way",
+    "unpaid_ticket",
+    "crosswalk_no_stop",
+    "red_light",
+    "plate_altered"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 3.4,
+   "penalty": null,
+   "gold_in_sources": []
+  },
+  {
+   "id": "s26",
+   "scenario": "ขับเร็วไปหน่อยตอนกลับบ้าน",
+   "expected": [],
+   "status": "need_more_info",
+   "tags": [
+    "need_info"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "ไม่รู้ความเร็วและอัตราที่กำหนด",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "violations_found",
+   "pred_offenses": [
+    "speeding"
+   ],
+   "exact": false,
+   "summary_th": "ผู้ขับขี่ขับรถเร็วเกินกว่าอัตราที่กฎหมายกำหนด",
+   "follow_up": null,
+   "sources": [
+    "speeding",
+    "no_seatbelt",
+    "impaired",
+    "red_light",
+    "plate_incomplete",
+    "crosswalk_no_stop",
+    "abnormal_driving",
+    "suspended_license"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 1.8,
+   "penalty": {
+    "offense_ids": [
+     "speeding"
+    ],
+    "total_fine_max": 4000,
+    "fine_unknown": [],
+    "points_raw": 1,
+    "total_points": 1,
+    "points_capped": false,
+    "points_left": 11,
+    "license_suspension_risk": false,
+    "any_jail": false,
+    "unverified": []
+   },
+   "gold_in_sources": []
+  },
+  {
+   "id": "s27",
+   "scenario": "ชนท้ายรถคันหน้าเบาๆ ตอนรถติด",
+   "expected": [],
+   "status": "need_more_info",
+   "tags": [
+    "need_info"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "ไม่รู้ว่าหยุดช่วย/แจ้งหรือไม่",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "no_violation",
+   "pred_offenses": [],
+   "exact": false,
+   "summary_th": "การชนท้ายรถคันหน้าเบาๆ ตอนรถติด ไม่เข้าข่ายความผิดตามแหล่งข้อมูลที่ให้มา",
+   "follow_up": null,
+   "sources": [
+    "no_seatbelt",
+    "emergency_no_yield",
+    "no_plate",
+    "plate_altered",
+    "plate_incomplete"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 2.1,
+   "penalty": null,
+   "gold_in_sources": []
+  },
+  {
+   "id": "s28",
+   "scenario": "จอดรถซ้อนคันหน้าห้างนานครึ่งชั่วโมง",
+   "expected": [],
+   "status": "out_of_scope",
+   "tags": [
+    "out_of_scope"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "จอดในที่ห้ามจอด ไม่ตัดคะแนน",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "no_violation",
+   "pred_offenses": [],
+   "exact": false,
+   "summary_th": "จากเรื่องที่เล่ามา การจอดรถซ้อนคันหน้าห้างนานครึ่งชั่วโมง ไม่ตรงกับข้อหาความผิดตามแหล่งข้อมูลที่ให้มา",
+   "follow_up": null,
+   "sources": [
+    "emergency_no_yield",
+    "no_plate",
+    "wrong_way",
+    "hit_and_run",
+    "plate_altered",
+    "unpaid_ticket",
+    "plate_incomplete",
+    "no_seatbelt"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 1.1,
+   "penalty": null,
+   "gold_in_sources": []
+  },
+  {
+   "id": "s29",
+   "scenario": "ภาษีรถขาดมาสองปีแล้วยังขับอยู่",
+   "expected": [],
+   "status": "out_of_scope",
+   "tags": [
+    "out_of_scope"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "พ.ร.บ.รถยนต์",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "out_of_scope",
+   "pred_offenses": [],
+   "exact": true,
+   "summary_th": "ข้อมูลที่ให้มาเป็นเรื่องภาษีรถขาด แต่ไม่มีข้อหาที่ตรงกับแหล่งข้อมูลที่ให้มา",
+   "follow_up": null,
+   "sources": [
+    "impaired",
+    "no_seatbelt",
+    "emergency_no_yield",
+    "no_plate",
+    "plate_altered",
+    "plate_incomplete"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 1.0,
+   "penalty": null,
+   "gold_in_sources": []
+  },
+  {
+   "id": "s30",
+   "scenario": "ขับรถมาหลายปีทั้งที่ไม่เคยสอบใบขับขี่เลย",
+   "expected": [],
+   "status": "out_of_scope",
+   "tags": [
+    "out_of_scope"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "ไม่มีใบขับขี่ ต่างจากถูกพักใบ",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "violations_found",
+   "pred_offenses": [
+    "impaired"
+   ],
+   "exact": false,
+   "summary_th": "ผู้ขับขี่ขับรถโดยไม่มีใบอนุญาตขับขี่ ซึ่งเข้าข่ายการขับรถในขณะหย่อนความสามารถในอันที่จะขับ",
+   "follow_up": null,
+   "sources": [
+    "suspended_license",
+    "abnormal_driving",
+    "drunk",
+    "speeding",
+    "impaired",
+    "phone",
+    "reckless"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 1.4,
+   "penalty": {
+    "offense_ids": [
+     "impaired"
+    ],
+    "total_fine_max": 10000,
+    "fine_unknown": [],
+    "points_raw": 3,
+    "total_points": 3,
+    "points_capped": false,
+    "points_left": 9,
+    "license_suspension_risk": false,
+    "any_jail": true,
+    "unverified": []
+   },
+   "gold_in_sources": []
+  },
+  {
+   "id": "s31",
+   "scenario": "ขับรถตอนกลางคืนไม่เปิดไฟหน้า",
+   "expected": [],
+   "status": "out_of_scope",
+   "tags": [
+    "out_of_scope"
+   ],
+   "author": "claude (developer, after freeze)",
+   "note": "มาตรา 11 มีโทษแต่ไม่ตัดคะแนน",
+   "reviewed_by": "user (2026-10-31, all 41 confirmed)",
+   "pred_status": "violations_found",
+   "pred_offenses": [
+    "abnormal_driving"
+   ],
+   "exact": false,
+   "summary_th": "ผู้ขับขี่ขับรถตอนกลางคืนโดยไม่เปิดไฟหน้า ซึ่งเข้าข่ายการขับรถในลักษณะที่ไม่อาจแลเห็นทางด้านหน้าพอแก่ความปลอดภัย",
+   "follow_up": null,
+   "sources": [
+    "abnormal_driving",
+    "suspended_license",
+    "drunk",
+    "speeding",
+    "impaired",
+    "phone",
+    "reckless"
+   ],
+   "refused": false,
+   "notes": [],
+   "llm_calls": 1,
+   "seconds": 1.6,
+   "penalty": {
+    "offense_ids": [
+     "abnormal_driving"
+    ],
+    "total_fine_max": 10000,
+    "fine_unknown": [],
+    "points_raw": 3,
+    "total_points": 3,
+    "points_capped": false,
+    "points_left": 9,
+    "license_suspension_risk": false,
+    "any_jail": true,
+    "unverified": []
+   },
+   "gold_in_sources": []
+  }
+ ]
+}

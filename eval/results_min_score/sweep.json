@@ -1,0 +1,362 @@
+[
+ {
+  "k": 3,
+  "floor": 0.0,
+  "context_recall": 0.6333333333333333,
+  "all_in_context": 0.45,
+  "mean_sources": 2.838709677419355,
+  "right_refusals": [],
+  "wrong_refusals": []
+ },
+ {
+  "k": 3,
+  "floor": 1.0,
+  "context_recall": 0.6333333333333333,
+  "all_in_context": 0.45,
+  "mean_sources": 2.838709677419355,
+  "right_refusals": [],
+  "wrong_refusals": []
+ },
+ {
+  "k": 3,
+  "floor": 1.5,
+  "context_recall": 0.6333333333333333,
+  "all_in_context": 0.45,
+  "mean_sources": 2.5483870967741935,
+  "right_refusals": [
+   "s31"
+  ],
+  "wrong_refusals": []
+ },
+ {
+  "k": 3,
+  "floor": 2.0,
+  "context_recall": 0.6333333333333333,
+  "all_in_context": 0.45,
+  "mean_sources": 2.4838709677419355,
+  "right_refusals": [
+   "s31"
+  ],
+  "wrong_refusals": [
+   "s03"
+  ]
+ },
+ {
+  "k": 3,
+  "floor": 3.0,
+  "context_recall": 0.6333333333333333,
+  "all_in_context": 0.45,
+  "mean_sources": 2.064516129032258,
+  "right_refusals": [
+   "s31"
+  ],
+  "wrong_refusals": [
+   "s03"
+  ]
+ },
+ {
+  "k": 3,
+  "floor": 4.0,
+  "context_recall": 0.5666666666666667,
+  "all_in_context": 0.35,
+  "mean_sources": 1.7419354838709677,
+  "right_refusals": [
+   "s31"
+  ],
+  "wrong_refusals": [
+   "s03",
+   "s04",
+   "s09"
+  ]
+ },
+ {
+  "k": 3,
+  "floor": 5.0,
+  "context_recall": 0.5666666666666667,
+  "all_in_context": 0.35,
+  "mean_sources": 1.4516129032258065,
+  "right_refusals": [
+   "s29",
+   "s30",
+   "s31"
+  ],
+  "wrong_refusals": [
+   "s01",
+   "s03",
+   "s04",
+   "s06",
+   "s09",
+   "s10"
+  ]
+ },
+ {
+  "k": 4,
+  "floor": 0.0,
+  "context_recall": 0.8,
+  "all_in_context": 0.7,
+  "mean_sources": 3.6129032258064515,
+  "right_refusals": [],
+  "wrong_refusals": []
+ },
+ {
+  "k": 4,
+  "floor": 1.0,
+  "context_recall": 0.8,
+  "all_in_context": 0.7,
+  "mean_sources": 3.6129032258064515,
+  "right_refusals": [],
+  "wrong_refusals": []
+ },
+ {
+  "k": 4,
+  "floor": 1.5,
+  "context_recall": 0.7666666666666667,
+  "all_in_context": 0.65,
+  "mean_sources": 3.096774193548387,
+  "right_refusals": [
+   "s31"
+  ],
+  "wrong_refusals": []
+ },
+ {
+  "k": 4,
+  "floor": 2.0,
+  "context_recall": 0.7666666666666667,
+  "all_in_context": 0.65,
+  "mean_sources": 3.0,
+  "right_refusals": [
+   "s31"
+  ],
+  "wrong_refusals": [
+   "s03"
+  ]
+ },
+ {
+  "k": 4,
+  "floor": 3.0,
+  "context_recall": 0.7333333333333333,
+  "all_in_context": 0.6,
+  "mean_sources": 2.3870967741935485,
+  "right_refusals": [
+   "s31"
+  ],
+  "wrong_refusals": [
+   "s03"
+  ]
+ },
+ {
+  "k": 4,
+  "floor": 4.0,
+  "context_recall": 0.6666666666666666,
+  "all_in_context": 0.5,
+  "mean_sources": 2.0,
+  "right_refusals": [
+   "s31"
+  ],
+  "wrong_refusals": [
+   "s03",
+   "s04",
+   "s09"
+  ]
+ },
+ {
+  "k": 4,
+  "floor": 5.0,
+  "context_recall": 0.6666666666666666,
+  "all_in_context": 0.5,
+  "mean_sources": 1.6451612903225807,
+  "right_refusals": [
+   "s29",
+   "s30",
+   "s31"
+  ],
+  "wrong_refusals": [
+   "s01",
+   "s03",
+   "s04",
+   "s06",
+   "s09",
+   "s10"
+  ]
+ },
+ {
+  "k": 6,
+  "floor": 0.0,
+  "context_recall": 0.8,
+  "all_in_context": 0.7,
+  "mean_sources": 5.096774193548387,
+  "right_refusals": [],
+  "wrong_refusals": []
+ },
+ {
+  "k": 6,
+  "floor": 1.0,
+  "context_recall": 0.8,
+  "all_in_context": 0.7,
+  "mean_sources": 5.032258064516129,
+  "right_refusals": [],
+  "wrong_refusals": []
+ },
+ {
+  "k": 6,
+  "floor": 1.5,
+  "context_recall": 0.7666666666666667,
+  "all_in_context": 0.65,
+  "mean_sources": 3.870967741935484,
+  "right_refusals": [
+   "s31"
+  ],
+  "wrong_refusals": []
+ },
+ {
+  "k": 6,
+  "floor": 2.0,
+  "context_recall": 0.7666666666666667,
+  "all_in_context": 0.65,
+  "mean_sources": 3.7419354838709675,
+  "right_refusals": [
+   "s31"
+  ],
+  "wrong_refusals": [
+   "s03"
+  ]
+ },
+ {
+  "k": 6,
+  "floor": 3.0,
+  "context_recall": 0.7333333333333333,
+  "all_in_context": 0.6,
+  "mean_sources": 2.870967741935484,
+  "right_refusals": [
+   "s31"
+  ],
+  "wrong_refusals": [
+   "s03"
+  ]
+ },
+ {
+  "k": 6,
+  "floor": 4.0,
+  "context_recall": 0.6666666666666666,
+  "all_in_context": 0.5,
+  "mean_sources": 2.193548387096774,
+  "right_refusals": [
+   "s31"
+  ],
+  "wrong_refusals": [
+   "s03",
+   "s04",
+   "s09"
+  ]
+ },
+ {
+  "k": 6,
+  "floor": 5.0,
+  "context_recall": 0.6666666666666666,
+  "all_in_context": 0.5,
+  "mean_sources": 1.7419354838709677,
+  "right_refusals": [
+   "s29",
+   "s30",
+   "s31"
+  ],
+  "wrong_refusals": [
+   "s01",
+   "s03",
+   "s04",
+   "s06",
+   "s09",
+   "s10"
+  ]
+ },
+ {
+  "k": 8,
+  "floor": 0.0,
+  "context_recall": 0.8333333333333334,
+  "all_in_context": 0.75,
+  "mean_sources": 6.483870967741935,
+  "right_refusals": [],
+  "wrong_refusals": []
+ },
+ {
+  "k": 8,
+  "floor": 1.0,
+  "context_recall": 0.8333333333333334,
+  "all_in_context": 0.75,
+  "mean_sources": 6.129032258064516,
+  "right_refusals": [],
+  "wrong_refusals": []
+ },
+ {
+  "k": 8,
+  "floor": 1.5,
+  "context_recall": 0.7666666666666667,
+  "all_in_context": 0.65,
+  "mean_sources": 4.483870967741935,
+  "right_refusals": [
+   "s31"
+  ],
+  "wrong_refusals": []
+ },
+ {
+  "k": 8,
+  "floor": 2.0,
+  "context_recall": 0.7666666666666667,
+  "all_in_context": 0.65,
+  "mean_sources": 4.225806451612903,
+  "right_refusals": [
+   "s31"
+  ],
+  "wrong_refusals": [
+   "s03"
+  ]
+ },
+ {
+  "k": 8,
+  "floor": 3.0,
+  "context_recall": 0.7333333333333333,
+  "all_in_context": 0.6,
+  "mean_sources": 3.161290322580645,
+  "right_refusals": [
+   "s31"
+  ],
+  "wrong_refusals": [
+   "s03"
+  ]
+ },
+ {
+  "k": 8,
+  "floor": 4.0,
+  "context_recall": 0.6666666666666666,
+  "all_in_context": 0.5,
+  "mean_sources": 2.2903225806451615,
+  "right_refusals": [
+   "s31"
+  ],
+  "wrong_refusals": [
+   "s03",
+   "s04",
+   "s09"
+  ]
+ },
+ {
+  "k": 8,
+  "floor": 5.0,
+  "context_recall": 0.6666666666666666,
+  "all_in_context": 0.5,
+  "mean_sources": 1.8064516129032258,
+  "right_refusals": [
+   "s29",
+   "s30",
+   "s31"
+  ],
+  "wrong_refusals": [
+   "s01",
+   "s03",
+   "s04",
+   "s06",
+   "s09",
+   "s10"
+  ]
+ }
+]
