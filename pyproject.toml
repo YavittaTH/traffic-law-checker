@@ -1,0 +1,9 @@
+[project]
+name = "traffic-law-checker"
+version = "0.1.0"
+description = "ทำแบบนี้ผิดอะไรบ้าง? — Thai traffic-law violation checker (LLM course capstone)"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

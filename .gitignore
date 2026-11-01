@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# rebuilt by scripts/build_corpus.py (the source PDFs in data/raw/ ARE committed: public law texts)
+data/processed/
+data/index/
