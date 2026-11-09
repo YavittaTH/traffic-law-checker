@@ -65,6 +65,11 @@ python eval\run_retrieval.py                 # retrieval: recall@k ของข�
 python eval\run_min_score.py                 # เลือก k และ min_score ของ RAG (ไม่ใช้ LLM)
 python eval\run_agent.py --mode rag --out eval\results_rag      # RAG บนชุดหลัก 31 ข้อ
 python eval\run_agent.py --mode all --out eval\results_all      # สามระบบพร้อมกัน
+python eval\paired_test.py                   # McNemar จากผลรายข้อที่บันทึกไว้ (ไม่ใช้ LLM)
+
+# วัด bge-m3 (ดาวน์โหลดโมเดลราว 2.3 GB; EMBED_MODEL ต้องเป็น BAAI/bge-m3)
+python scripts\build_index.py --model BAAI/bge-m3 --out data\index_bge
+python eval\run_retrieval.py --gold eval\scenarios.jsonl --out eval\results_retrieval_bge --index data\index_bge
 ```
 
 กฎกัน bias (รายละเอียดใน `eval/README.md`):
@@ -83,6 +88,8 @@ python eval\run_agent.py --mode all --out eval\results_all      # สามร�
 - [x] RAG แบบ demo: numbered sources, `[n]` citations, `min_score` floor + sweep (E5)
 - [x] FastAPI + SSE + หน้าเว็บ (สามโหมด)
 - [x] เทียบสามระบบบนชุดหลัก (E6): agent 87.1% · LLM อย่างเดียว 77.4% · RAG 58.1% → agent เป็นระบบหลัก
+- [x] ทดสอบแบบจับคู่ (E8, exact McNemar): หลังปรับ Holm ไม่มีคู่ใดผ่าน 0.05 จึงบอกได้แค่ว่า agent มีแนวโน้มดีกว่า ชุดทดสอบยังเล็ก (agent vs LLM อย่างเดียว p = 0.453, agent vs RAG p = 0.067)
+- [x] วัด bge-m3 เฉพาะการค้น (E7): ค้นข้อหาดีกว่า BM25 + ตาราง แต่ค้นมาตราแย่กว่า จึงยังไม่เปลี่ยนค่าเริ่มต้น
 
 ## Layout
 
@@ -100,7 +107,7 @@ traffic-law-checker/
 │   └── api/             app.py (FastAPI + SSE), static/index.html
 ├── scripts/           build_corpus, build_index, search, smoke_test_llm, ask, serve
 ├── data/raw | processed | penalties.csv
-├── eval/                gold sets, run_retrieval, run_min_score, run_agent, ผลแต่ละรอบ
+├── eval/                gold sets, run_retrieval, run_min_score, run_agent, paired_test, ผลแต่ละรอบ
 ├── docs/                data_notes.md, experiments.md
 └── tests/               56 tests ด้วยข้อมูลสังเคราะห์และ LLM ปลอม ไม่ต้องใช้เน็ต
 ```
@@ -110,4 +117,4 @@ traffic-law-checker/
 - กฎหมายและอัตราค่าปรับเปลี่ยนได้ ระบบตอบตามฉบับที่อยู่ใน corpus ณ วันที่สร้างเท่านั้น
 - ค่าปรับที่แสดงคือ**อัตราสูงสุดตามกฎหมาย** ไม่ใช่จำนวนที่จะถูกเปรียบเทียบปรับจริง
 - ครอบคลุมเฉพาะ 22 ข้อหาที่ตัดคะแนน เรื่องอื่น (จอดรถ ภาษีรถ ไม่มีใบขับขี่ ฯลฯ) ตอบว่านอกขอบเขต
-- การค้นใช้คำ (BM25) เรื่องที่ไม่มีคำหลักเลย เช่น "ตั้งวงแล้วขับกลับ" จึงหาข้อหาไม่เจอ และคำกำกวมอย่าง "ป้าย" ชี้ไปผิดข้อหาได้ (h03 ใน held-out)
+- การค้นใช้คำ (BM25) เรื่องที่ไม่มีคำหลักเลย เช่น "ตั้งวงแล้วขับกลับ" จึงหาข้อหาไม่เจอ และคำกำกวมอย่าง "ป้าย" ชี้ไปผิดข้อหาได้ (h03 ใน held-out) bge-m3 ค้นข้อหาได้ดีกว่าใน E7 แต่ยังไม่ได้เปิดใช้ เพราะยังไม่ได้วัดผลคำตอบสุดท้าย

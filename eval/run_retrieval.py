@@ -29,10 +29,11 @@ def main() -> None:
     ap.add_argument("--gold", type=Path, default=EVAL_DIR / "dev_retrieval.jsonl")
     ap.add_argument("--out", type=Path, default=EVAL_DIR / "results_retrieval")
     ap.add_argument("--no-dense", action="store_true")
+    ap.add_argument("--index", type=Path, default=None, help="dense index folder (default data/index/)")
     args = ap.parse_args()
 
     rules = load_penalties()
-    r = load_retriever(with_dense=not args.no_dense)
+    r = load_retriever(index_dir=args.index, with_dense=not args.no_dense)
     gold = [g for g in load_gold(args.gold) if offense_section_keys(g.get("expected", []), rules)]
     modes = ["bm25_raw", "bm25"] + (["dense", "hybrid"] if r.has_dense else [])
 

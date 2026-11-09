@@ -49,8 +49,6 @@ class Settings:
     llm_model: str
     # retrieval
     embed_model: str
-    top_k: int
-    min_score: float
     # classic RAG (rag.py): sources per answer and the BM25 floor
     rag_k: int
     rag_min_score: float
@@ -81,10 +79,8 @@ def get_settings() -> Settings:
     s = Settings(
         openai_api_key=os.getenv("OPENAI_API_KEY") or None,
         openai_base_url=os.getenv("OPENAI_BASE_URL") or None,
-        llm_model=os.getenv("LLM_MODEL", "gemma-4-E4B-it"),
+        llm_model=os.getenv("LLM_MODEL") or "gemma-4-E4B-it",
         embed_model=os.getenv("EMBED_MODEL", "BAAI/bge-m3"),
-        top_k=_int("TOP_K", 8),
-        min_score=_float("MIN_SCORE", 0.0),
         rag_k=_int("RAG_K", 8),
         rag_min_score=_float("RAG_MIN_SCORE", 1.0),
         agent_max_steps=_int("AGENT_MAX_STEPS", 6),
